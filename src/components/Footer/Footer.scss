@@ -1,0 +1,15 @@
+.info-text {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+    letter-spacing: 1px;
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: blue;
+        }
+    } 
+}

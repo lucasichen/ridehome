@@ -1,0 +1,36 @@
+.Home {
+    padding: 30px;
+    align-content: center;
+    
+    // header as in top div of home page
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        h1 {
+            display: inline;
+            color: #B41414;
+        }
+
+        // Where title is located
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    #sound-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+
+    #home-img {
+        width: 18vw;
+        height: 20vw;
+        margin: 50px;
+    } 
+}

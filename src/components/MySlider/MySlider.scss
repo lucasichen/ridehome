@@ -1,0 +1,17 @@
+.sliderTitle {
+    font-weight: 400;
+}
+
+.volume-controllers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    align-items: center;
+    justify-content: center;
+
+    
+    .slider {
+        color:#B41414;
+        width: 200px;
+    }
+
+}
