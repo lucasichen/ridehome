@@ -1,3 +1,5 @@
+// Import and export sounds
+
 import subway from '../assets/subway.m4a'; 
 import announcer from '../assets/announcer.mp3';
 import talking from '../assets/talking.mp3';
