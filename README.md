@@ -13,7 +13,9 @@ Small react project involving sounds on the TTC line 2.
 
 ### Inspired by
 * [ridethesubway](https://vanessah9.github.io/ridethesubway/)
-* [art](https://mienar.tumblr.com/)
+
+### Art
+* [mienar](https://mienar.tumblr.com/)
 
 ### Sounds
 * Subway: https://www.youtube.com/watch?v=7JEIsD6tDGM&ab_channel=TheMSsoundeffects
