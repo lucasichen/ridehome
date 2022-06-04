@@ -1,6 +1,7 @@
 # Ride Home
 
 Small react project involving sounds on the TTC line 2.
+![Images]([https://media.giphy.com/media/7M6aCNT9OUAxt1ydUx/giphy.gif](https://c.tenor.com/3aMeGnrMRrYAAAAC/art-aesthetic.gif))
 
 
 ## Built with
@@ -11,6 +12,7 @@ Small react project involving sounds on the TTC line 2.
 
 ### Inspired by
 [ridethesubway](https://vanessah9.github.io/ridethesubway/)
+[art](https://mienar.tumblr.com/)
 
 ### Sounds
 Subway: https://www.youtube.com/watch?v=7JEIsD6tDGM&ab_channel=TheMSsoundeffects
