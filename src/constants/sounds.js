@@ -8,7 +8,6 @@ import music from '../assets/music.mp3';
 
 export default {
     subway,
-    announcer,
     talking,
     music,
 };
