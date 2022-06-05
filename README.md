@@ -10,6 +10,8 @@ Small react project involving sounds on the TTC line 2.
 * [Sass](https://sass-lang.com/) - Instead of css, sass was used
 
 ## Credits
+* [Lucas](https://github.com/lucasichen)
+* [Quinn](https://github.com/)
 
 ### Inspired by
 * [ridethesubway](https://vanessah9.github.io/ridethesubway/)
