@@ -11,6 +11,7 @@
     div {
         margin: 0 30px;
     }
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
@@ -20,5 +21,4 @@
         color:#B41414;
         width: 200px;
     }
-
 }
