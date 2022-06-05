@@ -1,0 +1,42 @@
+.Home {
+
+    padding: 30px;
+    align-content: center;
+    
+    // header as in top div of home page
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        h1 {
+            display: inline;
+            color: black;
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        // Where title is located
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: #B41414;
+        }
+
+        
+    }
+
+    #home-img {
+        width: 18vw;
+        height: 20vw;
+        margin: 50px;
+    } 
+
+
+}
