@@ -51,11 +51,11 @@ const Home = () => {
             <img id='home-img' src={images.train_night} alt='home-img' />
             <div className='volume-controllers'>
                 <div id = "dropdown-slider-div">
-                <MySlider
-                    title=""
-                    sound={value}
-                    id="subwaySound"
-                />
+                    <MySlider
+                        title=""
+                        sound={value}
+                        id="subwaySound"
+                    />
                     <div id = "dropdown-div">
                         <select value = {value} onChange={handleChange} id = 'dropdown'>
                            {options.map((option) => (
