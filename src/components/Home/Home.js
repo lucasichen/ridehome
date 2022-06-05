@@ -2,11 +2,9 @@ import React from 'react'
 import './Home.scss'
 
 import { useState } from 'react'
-import MySlider from '../MySlider/MySlider'
+import AudioSlider from '../AudioSlider/AudioSlider'
 
-import { images, sounds } from '../../constants'
-import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
-
+import { sounds } from '../../constants'
 
 const Home = () => {
 
@@ -43,7 +41,7 @@ const Home = () => {
         <div className='Home'>
             <div className='volume-controllers'>
                 <div id = "dropdown-slider-div">
-                    <MySlider
+                    <AudioSlider
                         title=""
                         sound={value}
                         id="subwaySound"
@@ -58,14 +56,14 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <MySlider 
+                    <AudioSlider 
                         title="talking"
                         sound={sounds.talking}
                         id="talkingSound"
                     />
                 </div>
                 <div>
-                    <MySlider 
+                    <AudioSlider 
                         title="music"
                         sound={sounds.music}
                         id="musicSound"
