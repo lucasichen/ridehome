@@ -1,6 +1,7 @@
+import React from 'react'
 import './Home.scss'
 
-import { React, useState } from 'react'
+import { useState } from 'react'
 import MySlider from '../MySlider/MySlider'
 
 import { images, sounds } from '../../constants'
@@ -8,7 +9,7 @@ import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 
 
 const Home = () => {
-    // For the default sound
+
     const getInitialSoundState = () => {
         const value = sounds.line1;
         return value;
@@ -34,7 +35,6 @@ const Home = () => {
 
     const [value, setValue] = useState(getInitialSoundState)
 
-
     const handleChange = (event) => {
         setValue(event.target.value);
     }
@@ -42,44 +42,22 @@ const Home = () => {
     return (
         <div className='Home'>
             <div className='header'>
-
-                <div className='title'>
-
-
                 <div className='title'>
                     <h1><a href = "https://github.com/lucasichen/ridehome" target="_blank" rel="noreferrer"> ride home </a></h1>
                 </div>
                 
                 {/* <BsFillVolumeUpFill id='souwnd-icon'/> */}
-
-
-                {/* Title */} 
-                <div className='title'> 
-
-                    <h1>Ride Home</h1>
-                </div>
-                <BsFillVolumeUpFill id='sound-icon'/>
-
             </div>
             <img id='home-img' src={images.train_night} alt='home-img' />
             <div className='volume-controllers'>
-
-                <div>
-
                 <div id = "dropdown-slider-div">
-
                 <MySlider
                     title=""
                     sound={value}
                     id="subwaySound"
                 />
-
-                    <div>
-                        <select value = {value} onChange={handleChange}>
-
                     <div id = "dropdown-div">
                         <select value = {value} onChange={handleChange} id = 'dropdown'>
-
                            {options.map((option) => (
                                <option value = {option.value}>{option.sound}</option>
                            ))}
@@ -94,20 +72,9 @@ const Home = () => {
                         id="talkingSound"
                     />
                 </div>
-                {/* <div>
-                    <MySlider 
-
-                        title="Announcer"
-                        sound={sounds.announcer}
-                        id="annoucerSound"
-                    />
-                </div> */}
                 <div>
                     <MySlider 
-                        title="Music"
-
                         title="music"
-
                         sound={sounds.music}
                         id="musicSound"
                     />

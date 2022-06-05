@@ -1,7 +1,6 @@
 import React from 'react'
 import './Footer.scss'
 
-// Bottom of the page
 const Footer = () => {
   return (
     <div className='info-text'>
