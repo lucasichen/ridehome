@@ -1,4 +1,5 @@
 .Home {
+
     padding: 30px;
     align-content: center;
     
@@ -11,7 +12,9 @@
 
         h1 {
             display: inline;
-            color: #B41414;
+            color: black;
+            font-weight: normal;
+            text-decoration: none;
         }
 
         // Where title is located
@@ -20,7 +23,16 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        a {
+            text-decoration: none;
+            color: #B41414;
+        }
+
+        
     }
+
+    
 
     #sound-icon {
         width: 40px;
@@ -33,4 +45,22 @@
         height: 20vw;
         margin: 50px;
     } 
+
+    #dropdown {
+        // color:#B41414;
+        border: none;
+        width: 200px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #dropdown-slider-div {
+        padding-bottom: 19px;
+        justify-items: center;
+    }
+
+    #dropdown-div {
+        padding-right: 10px;
+    }
+
 }
