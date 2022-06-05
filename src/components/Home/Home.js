@@ -8,20 +8,7 @@ import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 
 
 const Home = () => {
-
-
-    const getInitialState = () => {
-        const value = 'sounds.talking';
-        return value;
-    }
-
-    const options = [
-        {sound: "TTC Line 1", value: sounds.talking},
-        {sound: "TTC Line 2", value: sounds.music}
-    ]
-
-    const [value, setValue] = useState(getInitialState)
-
+    // For the default sound
     const getInitialSoundState = () => {
         const value = sounds.line1;
         return value;
