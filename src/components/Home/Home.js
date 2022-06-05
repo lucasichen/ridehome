@@ -1,7 +1,6 @@
 import React from 'react'
 import './Home.scss'
 
-import { useState } from 'react'
 import MySlider from '../MySlider/MySlider'
 
 import { images, sounds } from '../../constants'
@@ -40,15 +39,31 @@ const Home = () => {
     }
 
     return (
+        // Home page
         <div className='Home'>
+
+            {/* Header */}
             <div className='header'>
+
                 <div className='title'>
                     <h1><a href = "https://github.com/lucasichen/ridehome" target="_blank" rel="noreferrer"> ride home </a></h1>
                 </div>
                 
                 {/* <BsFillVolumeUpFill id='souwnd-icon'/> */}
+
+
+                {/* Title */} 
+                <div className='title'> 
+                    <h1>Ride Home</h1>
+                </div>
+                {/* Sound icon */}
+                <BsFillVolumeUpFill id='sound-icon'/>
+
             </div>
+            {/* Image of train */}
             <img id='home-img' src={images.train_night} alt='home-img' />
+
+            {/* Sliders */}
             <div className='volume-controllers'>
                 <div id = "dropdown-slider-div">
                 <MySlider
