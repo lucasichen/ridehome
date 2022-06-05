@@ -4,9 +4,10 @@ import subway from '../assets/subway.m4a';
 import announcer from '../assets/announcer.mp3';
 import talking from '../assets/talking.mp3';
 import music from '../assets/music.mp3';
+// import test from 'https://ridehome.s3.amazonaws.com/sounds/talking.mp3';
 
 export default {
     subway,
     talking,
-    music
+    music,
 };

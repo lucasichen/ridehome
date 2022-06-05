@@ -1,6 +1,6 @@
-import React from 'react'
 import './Home.scss'
 
+import { React, useState } from 'react'
 import MySlider from '../MySlider/MySlider'
 
 import { images, sounds } from '../../constants'
@@ -8,6 +8,19 @@ import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 
 
 const Home = () => {
+
+
+    const getInitialState = () => {
+        const value = 'sounds.talking';
+        return value;
+    }
+
+    const options = [
+        {sound: "TTC Line 1", value: sounds.talking},
+        {sound: "TTC Line 2", value: sounds.music}
+    ]
+
+    const [value, setValue] = useState(getInitialState)
 
     const getInitialSoundState = () => {
         const value = sounds.line1;
@@ -34,16 +47,17 @@ const Home = () => {
 
     const [value, setValue] = useState(getInitialSoundState)
 
+
     const handleChange = (event) => {
         setValue(event.target.value);
     }
 
     return (
-        // Home page
         <div className='Home'>
-
-            {/* Header */}
             <div className='header'>
+
+                <div className='title'>
+
 
                 <div className='title'>
                     <h1><a href = "https://github.com/lucasichen/ridehome" target="_blank" rel="noreferrer"> ride home </a></h1>
@@ -54,25 +68,31 @@ const Home = () => {
 
                 {/* Title */} 
                 <div className='title'> 
+
                     <h1>Ride Home</h1>
                 </div>
-                {/* Sound icon */}
                 <BsFillVolumeUpFill id='sound-icon'/>
 
             </div>
-            {/* Image of train */}
             <img id='home-img' src={images.train_night} alt='home-img' />
-
-            {/* Sliders */}
             <div className='volume-controllers'>
+
+                <div>
+
                 <div id = "dropdown-slider-div">
+
                 <MySlider
                     title=""
                     sound={value}
                     id="subwaySound"
                 />
+
+                    <div>
+                        <select value = {value} onChange={handleChange}>
+
                     <div id = "dropdown-div">
                         <select value = {value} onChange={handleChange} id = 'dropdown'>
+
                            {options.map((option) => (
                                <option value = {option.value}>{option.sound}</option>
                            ))}
@@ -87,9 +107,20 @@ const Home = () => {
                         id="talkingSound"
                     />
                 </div>
+                {/* <div>
+                    <MySlider 
+
+                        title="Announcer"
+                        sound={sounds.announcer}
+                        id="annoucerSound"
+                    />
+                </div> */}
                 <div>
                     <MySlider 
+                        title="Music"
+
                         title="music"
+
                         sound={sounds.music}
                         id="musicSound"
                     />
