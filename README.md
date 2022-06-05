@@ -8,10 +8,14 @@ Small react project involving sounds on the TTC line 2.
 ## Built with
 * [React](https://reactjs.org/docs/getting-started.html) - The web framework used
 * [Sass](https://sass-lang.com/) - Instead of css, sass was used
+* [S3 Buckets](https://aws.amazon.com/s3/) - To hold all audio files
+
+
+## Authors
+* [Lucas Chen](https://github.com/lucasichen)
+* [Quinn Ha](https://github.com/)
 
 ## Credits
-* [Lucas](https://github.com/lucasichen)
-* [Quinn](https://github.com/)
 
 ### Inspired by
 * [ridethesubway](https://vanessah9.github.io/ridethesubway/)
