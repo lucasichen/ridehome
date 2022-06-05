@@ -1,7 +1,7 @@
 import React from 'react'
 import { images } from '../../constants'
 import './Header.scss'
-
+import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 const Header = () => {
   return (
     <div className='Home'>
