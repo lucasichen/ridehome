@@ -9,7 +9,7 @@ import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 
 
 const Home = () => {
-
+    // For the default sound
     const getInitialSoundState = () => {
         const value = sounds.line1;
         return value;
