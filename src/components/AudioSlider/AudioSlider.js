@@ -12,11 +12,12 @@ function AudioSlider(soundEffect) {
     var audio = document.getElementById(soundEffect.id);
     audio.play();
     audio.volume = parseFloat(newVal);
+    audio.autoplay=""
   };
 
   return (
     <div>
-      <Slider className="slider"
+      <Slider className="Slider"
         value = { sliderValue } 
         step = { 0.1 }
         min={ 0.0 }

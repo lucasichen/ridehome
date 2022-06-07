@@ -1,7 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Home.scss'
 
-import { useState } from 'react'
 import AudioSlider from '../AudioSlider/AudioSlider'
 
 import { sounds } from '../../constants'
@@ -13,15 +12,15 @@ const Home = () => {
         return value;
     }
 
-    const getInitialMuteState = () => {
-        const value = '1';
-        return value;
-    }
+    // const getInitialMuteState = () => {
+    //     const value = '1';
+    //     return value;
+    // }
 
-    const muteStates = [
-        {name: 'off', value: '0'},
-        {name: 'on', value: '1'},
-    ]
+    // const muteStates = [
+    //     {name: 'off', value: '0'},
+    //     {name: 'on', value: '1'},
+    // ]
 
     const options = [
         {sound: "TTC line 1", value: sounds.line1},
@@ -46,8 +45,8 @@ const Home = () => {
                         sound={value}
                         id="subwaySound"
                     />
-                    <div id = "dropdown-div">
-                        <select value = {value} onChange={handleChange} id = 'dropdown'>
+                    <div id="dropdown-div">
+                        <select value = {value} onChange={handleChange} id='dropdown'>
                            {options.map((option) => (
                                <option value = {option.value}>{option.sound}</option>
                            ))}
