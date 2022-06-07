@@ -2,14 +2,12 @@
 :root {
   --font-color: #333;
   --background-color: #faebd7;
-  --footer-font-color: #333;
 }
 
 /* 2 */
 [data-theme="dark"] {
-  --font-color: #B41414;
+  --font-color: #faebd7;
   --background-color: #333;
-  --footer-font-color: #fff;
 }
 
 /* 3 */
@@ -40,9 +38,10 @@ body {
     display: none;
   }
 }
-  
+
+// IN LIGHT MODE
 .slider {
-  background-color: #ccc;
+  background-color: #e7dac9;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -51,6 +50,7 @@ body {
   top: 0;
   transition: 0.2s;
 
+  // BUTTON KNOB
   &:before {
     background-color: #fff;
     bottom: 4px;
@@ -62,13 +62,15 @@ body {
     width: 26px;
   }
 }
-  
+
+// IN DARK MODE
 input:checked + .slider:before {
   transform: translateX(26px);
 }
-  
+
+// BUTTON COLOR IN DARK MODE
 input:checked + .slider {
-    background-color: cornflowerblue;
+  background-color: rgb(78, 77, 77);
 }
   
 .slider.round {
