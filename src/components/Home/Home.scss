@@ -3,13 +3,15 @@
     padding: 30px;
     align-content: center;
 
-    #dropdown {
-        // color:#B41414;
+    #dropdown {  
+        color: var(--font-color);
+        background-color: var(--background-color);
         cursor: pointer;
         border: none;
         width: 200px;
         font-size: 22px;
         text-align: center;
+        
     }
 
     #dropdown-slider-div {

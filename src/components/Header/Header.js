@@ -1,7 +1,8 @@
 import React from 'react'
 import { images } from '../../constants'
 import './Header.scss'
-import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
+import DarkMode from '../DarkMode/DarkMode.tsx'
+// import { BsFillVolumeUpFill, BsFillVolumeMuteFill } from 'react-icons/bs'
 const Header = () => {
   return (
     <div className='Home'>
@@ -9,7 +10,7 @@ const Header = () => {
             <div className='title'>
                 <h1><a href = "https://github.com/lucasichen/ridehome" target="_blank" rel="noreferrer"> ride home </a></h1>
             </div>
-            
+            <DarkMode />
             {/* <BsFillVolumeUpFill id='souwnd-icon'/> */}
         </div>
         <img id='home-img' src={images.train_night} alt='home-img' />
