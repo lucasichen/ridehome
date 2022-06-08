@@ -5,5 +5,5 @@ import train_night from '../assets/train_night.gif';
 
 export default {
     // train,
-    train_night
+    train_night,
 };
