@@ -23,10 +23,10 @@ const Home = () => {
     // ]
 
     const options = [
-        {sound: "TTC line 1", value: sounds.line1},
-        {sound: "TTC line 2", value: sounds.line2},
-        {sound: "TTC line 3", value: sounds.line3},
-        {sound: "TTC line 4", value: sounds.line4},
+        // {sound: "TTC line 1", value: sounds.line1},
+        // {sound: "TTC line 2", value: sounds.line2},
+        // {sound: "TTC line 3", value: sounds.line3},
+        // {sound: "TTC line 4", value: sounds.line4},
         {sound: "endless", value: sounds.endless}
     ]
 
