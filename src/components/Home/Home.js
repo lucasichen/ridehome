@@ -8,7 +8,7 @@ import { sounds } from '../../constants'
 const Home = () => {
 
     const getInitialSoundState = () => {
-        const value = sounds.line1;
+        const value = sounds.endless;
         return value;
     }
 
