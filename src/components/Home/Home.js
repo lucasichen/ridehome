@@ -12,21 +12,7 @@ const Home = () => {
         return value;
     }
 
-    // const getInitialMuteState = () => {
-    //     const value = '1';
-    //     return value;
-    // }
-
-    // const muteStates = [
-    //     {name: 'off', value: '0'},
-    //     {name: 'on', value: '1'},
-    // ]
-
     const options = [
-        // {sound: "TTC line 1", value: sounds.line1},
-        // {sound: "TTC line 2", value: sounds.line2},
-        // {sound: "TTC line 3", value: sounds.line3},
-        // {sound: "TTC line 4", value: sounds.line4},
         {sound: "endless", value: sounds.endless}
     ]
 
@@ -72,6 +58,5 @@ const Home = () => {
         </div>
     )
 }
-
 
 export default Home
