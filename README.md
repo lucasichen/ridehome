@@ -8,8 +8,6 @@ Small react project involving sounds on the TTC line 2.
 ## Built with
 * [React](https://reactjs.org/docs/getting-started.html) - The web framework used
 * [Scss](https://sass-lang.com/documentation/syntax) - Instead of css, sass was used
-* [S3 Buckets](https://aws.amazon.com/s3/) - To hold all audio files
-
 
 ## Authors
 * [Lucas Chen](https://github.com/lucasichen)
