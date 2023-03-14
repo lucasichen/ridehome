@@ -44,7 +44,7 @@ const toggleTheme: React.ChangeEventHandler<HTMLInputElement> = (e) => {
   }
 };
 
-// For Material UI Switch
+// For Material UI Switch from https://mui.com/material-ui/react-switch/
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
@@ -94,18 +94,6 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 const DarkMode = () => {
   return (
     <div className="toggle-theme-wrapper">
-      {/* CSS Switch now depracted */}
-      {/* <label className="toggle-theme" htmlFor="checkbox">
-        <input
-          type="checkbox"
-          id="checkbox"
-
-          // 6
-          onChange={toggleTheme}
-          defaultChecked={defaultDark}
-        />
-        <div className="slider round"></div>
-      </label> */}
       <FormGroup 
         onChange={toggleTheme}          /* for changing the theme via localStorage */
         defaultChecked={defaultDark}>   {/* default to dark mode */}
